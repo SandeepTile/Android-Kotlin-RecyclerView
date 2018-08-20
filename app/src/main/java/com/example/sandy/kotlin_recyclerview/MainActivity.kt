@@ -14,6 +14,6 @@ class MainActivity : AppCompatActivity() {
         var lManager = LinearLayoutManager(this,
                 LinearLayoutManager.VERTICAL,false)
         rview.layoutManager = lManager
-       //rview.adapter = MyAdapter(this@MainActivity)
+        rview.adapter = MyAdapter(this@MainActivity)
     }
 }
