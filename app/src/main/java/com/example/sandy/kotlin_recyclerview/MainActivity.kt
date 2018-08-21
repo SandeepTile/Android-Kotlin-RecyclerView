@@ -15,5 +15,12 @@ class MainActivity : AppCompatActivity() {
                 LinearLayoutManager.VERTICAL,false)
         rview.layoutManager = lManager
         rview.adapter = MyAdapter(this@MainActivity)
+
+        fab.setOnClickListener {
+
+            System.exit(0)
+        }
     }
+
+
 }

@@ -5,6 +5,7 @@ import android.media.ThumbnailUtils
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import android.widget.Toast
 import java.io.File
 
 class MyAdapter :RecyclerView.Adapter<MyHolder>{
@@ -54,10 +55,15 @@ class MyAdapter :RecyclerView.Adapter<MyHolder>{
         holder.size!!.text=f.length().toString()
         holder.del!!.setOnClickListener {
 
+            Toast.makeText(mActivity,"button clicked",Toast.LENGTH_LONG).show()
             f.delete()
+
             files=file!!.listFiles()
 
+
         }
+
+
 
     }
 }
