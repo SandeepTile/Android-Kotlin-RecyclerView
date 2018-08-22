@@ -49,7 +49,7 @@ class MyAdapter :RecyclerView.Adapter<MyHolder>{
         var f: File = files!!.get(position)
 
         var b = BitmapFactory.decodeFile(f.path)
-        var bmp= ThumbnailUtils.extractThumbnail(b,50,50 )
+        var bmp= ThumbnailUtils.extractThumbnail(b,100,100)
         holder.cView!!.setImageBitmap(bmp)
 
         holder.name!!.text=f.name

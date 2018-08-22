@@ -11,7 +11,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:background="#38383d">
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:layout_margin="5dp"
@@ -35,7 +36,7 @@
                 android:text="File Name"
                 android:textStyle="bold"
                 android:textSize="20sp"
-                android:textColor="#FF0000"
+                android:textColor="#ded4d4"
                 android:id="@+id/name"/>
 
             <TextView
@@ -45,7 +46,7 @@
                 android:text="File Size"
                 android:textStyle="bold"
                 android:textSize="20sp"
-                android:textColor="#0000FF"
+                android:textColor="#ded4d4"
                 android:id="@+id/size"/>
 
         </LinearLayout>
