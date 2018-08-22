@@ -2,6 +2,7 @@ package com.example.sandy.kotlin_recyclerview
 
 import android.graphics.BitmapFactory
 import android.media.ThumbnailUtils
+import android.support.design.widget.Snackbar
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -55,10 +56,11 @@ class MyAdapter :RecyclerView.Adapter<MyHolder>{
         holder.size!!.text=f.length().toString()
         holder.del!!.setOnClickListener {
 
-            Toast.makeText(mActivity,"button clicked",Toast.LENGTH_LONG).show()
+            Toast.makeText(mActivity,"Image Deleted",Toast.LENGTH_LONG).show()
             f.delete()
 
             files=file!!.listFiles()
+            this@MyAdapter.notifyDataSetChanged()   //refresh listView
 
 
         }
