@@ -4,6 +4,7 @@ import android.graphics.Color
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.design.widget.Snackbar
+import android.support.v7.widget.GridLayoutManager
 import android.support.v7.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.activity_main.*
 import android.support.v7.widget.RecyclerView
@@ -18,6 +19,23 @@ class MainActivity : AppCompatActivity() {
 
         var lManager = LinearLayoutManager(this,
                 LinearLayoutManager.VERTICAL,false)
+
+        /*
+
+        //----------Gallery View---------------
+
+        var lManager = LinearLayoutManager(this,
+                LinearLayoutManager.HORIZONTAL,false)
+        rview.layoutManager = lManager */
+
+       /*
+
+            //-------------Grid Layout-------------
+
+       var gManager = GridLayoutManager(this,2)
+        rview.layoutManager =  gManager
+
+       */
         rview.layoutManager = lManager
         rview.adapter = MyAdapter(this@MainActivity)
 
